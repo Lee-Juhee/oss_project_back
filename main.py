@@ -5,6 +5,8 @@ from pydantic import BaseModel
 from datetime import datetime
 import uvicorn
 
+origin = {"http://127.0.0.1:5500", "http://44.207.59.235"}
+
 app = FastAPI()
 
 app.add_middleware(
